@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+         <servlet>
+	         <servlet-name>customerinsert</servlet-name>
+		     <servlet-class>com.reservation.ReservationServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+	         <servlet-name>customerinsert</servlet-name>
+	         <url-pattern>/insert</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+	         <servlet-name>updatecustomer</servlet-name>
+	         <servlet-class>com.reservation.UpdatecustomerServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+	         <servlet-name>updatecustomer</servlet-name>
+	         <url-pattern>/update</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+	         <servlet-name>Bookingdetails</servlet-name>
+	         <servlet-class>com.reservation.BookingDetailsServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+	         <servlet-name>Bookingdetails</servlet-name>
+	         <url-pattern>/Bookingdetails</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+	         <servlet-name>Deletecustomer</servlet-name>
+	         <servlet-class>com.reservation.DeleteCustomerServlet</servlet-class>
+         </servlet>
+         
+          <servlet-mapping>
+	         <servlet-name>Deletecustomer</servlet-name>
+	         <url-pattern>/delete</url-pattern>
+         </servlet-mapping>
+  
+                
+</web-app>
